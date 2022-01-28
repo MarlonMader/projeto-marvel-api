@@ -1,8 +1,10 @@
 import React from "react";
 
 import { Container, Title, Form } from "./style";
+import api from "../../services/api";
 
 const Dashboard: React.FC = () =>{
+    const [characters, set characters] = useSate<Character []> ([]);
     return(
         <Container>
             <Title>Pesquise os personagens da Marvel por nome</Title>
