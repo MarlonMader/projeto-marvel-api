@@ -4,7 +4,7 @@ import GlobalStyle from './styles/global';
 
 import Dashboard from './pages/Dashboard';
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
     <Dashboard/>
